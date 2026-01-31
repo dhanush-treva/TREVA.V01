@@ -883,3 +883,253 @@ footer {
 .instagram-media {
     max-width: 80px !important; /* match new width */
 }
+/* ======================================================
+   MOBILE RESPONSIVE PACK
+   Add at bottom of CSS
+====================================================== */
+
+/* 1) MOBILE — below 600px */
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        display: none; /* hide big menu */
+    }
+
+    /* Logo */
+    .logo img {
+        height: 32px;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn-hero {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    /* HIGHLIGHTS */
+    .highlight-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* SERVICES 1 column */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* WHY CHOOSE US → stack */
+    .why-choose-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-right img {
+        width: 100%;
+    }
+
+    /* CLIENT CAROUSEL logos smaller */
+    .carousel-track img {
+        height: 60px;
+    }
+
+    /* INSTAGRAM REELS */
+    .reel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reel-wrapper {
+        transform: scale(0.55);
+        margin: -40px auto;
+    }
+
+    /* FIND US SECTION */
+    .findus-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* FOOTER stack */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+}
+
+/* 2) TABLET — 600px to 900px */
+@media (max-width: 900px) and (min-width: 600px) {
+
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-choose-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-right img {
+        width: 75%;
+    }
+
+    .reel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3) VERY SMALL DEVICES (below 400px) */
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-hero {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .carousel-track img {
+        height: 50px;
+    }
+}
+/* GLOBAL MOBILE FIX */
+html, body {
+    overflow-x: hidden;
+}
+@media (max-width: 720px) {
+    .nav-links {
+        display: none;
+    }
+
+    .btn-contact {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+}
+/* FIX MAP OVERFLOW */
+.findus-right iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 350px;
+    border-radius: 16px;
+    display: block;
+}
+
+.findus-right {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .findus-container {
+        flex-direction: column;
+    }
+
+    .findus-right iframe {
+        height: 300px;
+    }
+}
+/* HAMBURGER BUTTON */
+.hamburger {
+    font-size: 30px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+}
+
+
+/* SHOW MOBILE NAV ON SMALL SCREENS */
+@media(max-width: 820px) {
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* MOBILE MENU SLIDE BOX */
+    .mobile-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: 0.4s ease;
+        z-index: 9999;
+    }
+
+    .mobile-menu a {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-menu.active {
+        right: 0 !important;
+    }
+
+    .mobile-btn {
+        margin-top: 20px;
+        padding: 12px;
+        text-align: center;
+        border-radius: 8px;
+        background: #00FFFF;
+        color: #000 !important;
+        border-bottom: none !important;
+    }
+}
