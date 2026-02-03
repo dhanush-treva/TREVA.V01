@@ -209,3 +209,19 @@ const mobileMenu = document.getElementById("mobileMenu");
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
 });
+window.addEventListener("load", () => {
+    const loader = document.getElementById("treva-loader");
+
+    setTimeout(() => {
+        loader.classList.add("hide");
+
+        setTimeout(() => {
+            loader.remove(); // prevents blocking
+        }, 900);
+
+    }, 1200); // loader duration
+});
+// Future animations or graph logic can go here.
+// Currently kept empty for clean page loading.
+console.log("TREVA Services Loaded");
+
