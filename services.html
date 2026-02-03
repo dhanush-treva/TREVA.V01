@@ -1,0 +1,255 @@
+<nav class="navbar">
+    <div class="logo">
+        <img src="image-removebg-preview (2) (1).png" alt="Logo" id="site-logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="services.html">Services</a>
+            <div class="dropdown-menu">
+                <div class="drop-item">
+                    <img src="social-media.png">
+                    <span>Social Media</span>
+                    <a href="social-media.html"></a>
+                </div>
+                <div class="drop-item">
+                    <img src="performance.png">
+                    <span>Performance Marketing</span>
+                </div>
+                <div class="drop-item">
+                    <img src="app-development.png">
+                    <span>Website Development</span>
+                </div>
+                <div class="drop-item">
+                    <img src="google.png">
+                    <span>Google Business / Local SEO</span>
+                </div>
+                <div class="drop-item">
+                    <img src="search-engine-optimization.png">
+                    <span>Search Optimization (AI – LLM)</span>
+                </div>
+                <div class="drop-item">
+                    <img src="photo.png">
+                    <span>Professional Shoot</span>
+                </div>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Our Product</a>
+            <div class="dropdown-menu">
+                <div class="drop-item">
+                    <img src="coding.png">
+                    <span>TREVA OS</span>
+                </div>
+                <div class="drop-item">
+                    <img src="birthday-cake.png">
+                    <span>Make My Cake App</span>
+                </div>
+            </div>
+        </li>
+
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="nav-cta">
+        <a href="#contact" class="btn-contact">Contact Us</a>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">Our Product</a>
+        <a href="#">About</a>
+        <a href="#">Clients</a>
+        <a href="#">Blog</a>
+        <a href="#contact" class="btn-contact mobile-btn">Contact Us</a>
+    </div>
+</nav>
+
+<head>
+    <title>Our Services | Treva Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <section class="s12">
+<section class="services-section">
+
+    <h2 class="services-title">Our Services</h2>
+
+    <div class="services-grid">
+
+        <!-- SERVICE CARD -->
+        <div class="service-card">
+            <img src="social-media.png" alt="">
+            <h3>Social Media</h3>
+            <p class="service-desc">
+                Full social media management with content creation, reels, strategy, and paid promotions.
+            </p>
+<a href="social-media.html">Social Media</a>
+        </div>
+
+        <div class="service-card">
+            <img src="performance.png" alt="">
+            <h3>Performance Marketing</h3>
+            <p class="service-desc">
+                ROI-driven ad campaigns across Meta & Google optimized for sales, leads & brand growth.
+            </p>
+            <a href="performance-marketing.html">Performance Marketing</a>
+        </div>
+
+        <div class="service-card">
+            <img src="coding.png" alt="">
+            <h3>Website Development</h3>
+            <p class="service-desc">
+                Clean, responsive and SEO-ready websites built for conversions and smooth user experience.
+            </p>
+                        <a href="website-development.html">Website Development</a>
+
+        </div>
+
+        <div class="service-card">
+            <img src="google.png" alt="">
+            <h3>Google Business / Local SEO</h3>
+            <p class="service-desc">
+                Rank higher in local searches, increase walk-ins and generate high-intent customers.
+            </p>
+                        <a href="local-seo.html">Google Business</a>
+
+        </div>
+
+        <div class="service-card">
+            <img src="search-engine-optimization.png" alt="">
+            <h3>Search Optimization (AI – LLM)</h3>
+            <p class="service-desc">
+                Intelligent AI-driven SEO strategies using LLM optimization for maximum visibility.
+            </p>
+                                    <a href="ai-seo.html">Search Optimization</a>
+
+        </div>
+
+        <div class="service-card">
+            <img src="photo.png" alt="">
+            <h3>Professional Shoot</h3>
+            <p class="service-desc">
+                Premium product, brand, and business shoot with professional equipment & editing.
+            </p>
+                                    <a href="performance-marketing.html">Professional Shoot</a>
+
+        </div>
+
+    </div>
+</section>
+    </section>
+<section class="113">
+<!-- Floating Chat Button + Popup Chat Window -->
+<style>
+/* Popup window */
+#chatPopup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: none;
+    overflow: hidden;
+    z-index: 999999;
+}
+
+/* Floating Chat Button */
+#chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000000;
+}
+</style>
+
+<!-- Chatbot Popup -->
+<div id="chatPopup">
+    <iframe
+        src="https://www.chatbase.co/chatbot-iframe/eItSyB1eaCw9PK9wgSjgV"
+        width="100%"
+        height="100%"
+        frameborder="0"
+    ></iframe>
+</div>
+
+<!-- Floating Button -->
+<div id="chatButton">💬</div>
+
+<script>
+const chatButton = document.getElementById("chatButton");
+const chatPopup = document.getElementById("chatPopup");
+
+chatButton.onclick = () => {
+    chatPopup.style.display = 
+        chatPopup.style.display === "none" ? "block" : "none";
+};
+</script>
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 — QUICK LINKS -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="b#blog">Blog</a>
+            <a href="c#clients">Clients</a>
+            <a href="index.html">Contact</a>
+        </div>
+
+        <!-- COLUMN 2 — LOGO CENTER -->
+        <div class="footer-col footer-center">
+            <img src="image-removebg-preview (2) (1).png" alt="Treva Logo" class="footer-logo">
+            <p>© 2026 Treva. All Rights Reserved.</p>
+        </div>
+
+        <!-- COLUMN 3 — SERVICES LIST -->
+        <div class="footer-col">
+            <h3>Our Services</h3>
+            <a href="#">Social Media</a>
+            <a href="#">Performance Marketing</a>
+            <a href="#">Website Development</a>
+            <a href="#">Google Business / Local SEO</a>
+            <a href="#">AI Search Optimization</a>
+            <a href="#">Professional Shoot</a>
+        </div>
+
+        <!-- COLUMN 4 — CONTACT INFO -->
+        <div class="footer-col">
+            <h3>Contact Info</h3>
+            <p>Email: info@treva.in</p>
+            <p>Phone: +91 9739885046</p>
+            <p>Location: HSR Extension, Bangalore</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
